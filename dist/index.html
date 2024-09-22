@@ -1,1 +1,82 @@
-<!doctype html><html lang="ru"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Булька карабулька</title><script defer="defer" src="js/index.js"></script><link href="css/index.css" rel="stylesheet"></head><body><div><form id="app__login"><label><span>Введи имя:</span> <input class="app__login-name"></label> <label><span>Введи пароль:</span> <input class="app__login-password"></label> <input type="reset" value="Очистить форму"> <input type="submit" value="Войти на сервер"></form></div><div id="app"><div class="downyata"><div class="magistral__paper"><div><label for="fromSity">Из города:</label> <select name="fromSity" id="fromSity"></select></div><div><label for="toSity">В город:</label> <select name="toSity" id="toSity"></select></div><button class="bvBtn">Вперёд!</button></div><div class="line line--blue"><div class="line__train">=></div><div class="line__timer"><span class="line__timer-label">Go</span> <span class="line__timer-content"></span></div></div></div></div></body></html>
+<!DOCTYPE html>
+<html lang="ru">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Булька карабулька</title>
+   <script defer src="js/index.js"></script><link href="css/index.css" rel="stylesheet"></head>
+   <body>
+		<div>
+			<form id="app__login">
+				<label>
+					<span>Введи имя:</span>
+					<input type="text" class="app__login-name">
+				</label>
+				<label>
+					<span>Введи пароль:</span>
+					<input type="text" class="app__login-password">
+				</label>
+				<input type="reset" value="Очистить форму">
+				<input type="submit" value="Войти на сервер">
+			</form>
+		</div>
+		<div id="app">
+			<div class="downyata">
+         <div class="col">
+            <div class="wrap">
+               <img class="a" src="./img/bg.jpg" width="400" height="100" />
+               <div class="stat">
+                  <h1>Город: DownЯта 🎆🍷</h1>
+                  <h2>Статистика</h2>
+                  <ul>
+                     <li>Население: 1 down</li>
+                  </ul>
+               </div>
+               <img src="./img/clock.jpg" width="400" />
+            </div>
+
+            <div class="gosti">
+               <h1>Московская гостинница</h1>
+               <img src="./img/mpa.jpg" class="gostinnia" height="500" />
+            </div>
+
+            <div>
+               <img src="./img/Сая.jpg" height="700" class="сая" />
+               <p>убей себя педовка</p>
+            </div>
+
+            <div>
+               <button class="downBtn">НА 1 этаж</button><br />
+               <canvas class="elevator" width="80" height="920"></canvas>
+            </div>
+
+            <div>
+               <img src="./img/b.jpg" alt="" width="300" />
+               <img src="./img/s.jpg" alt="" width="300" />
+            </div>
+         </div>
+
+         <div class="magistral__paper">
+            <div>
+               <label for="fromSity">Из города:</label>
+               <select name="fromSity" id="fromSity"></select>
+            </div>
+            <div>
+               <label for="toSity">В город:</label>
+               <select name="toSity" id="toSity"></select>
+            </div>
+            <button class="bvBtn">Вперёд!</button>
+         </div>
+
+         <div class="line line--blue">
+            <div class="line__train">=></div>
+            <div class="line__timer">
+               <span class="line__timer-label">Go</span>
+               <span class="line__timer-content"></span>
+            </div>
+         </div>
+      </div>
+	</div>
+</div>
+   </body>
+</html>

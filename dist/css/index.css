@@ -1,1 +1,143 @@
-*,:after,:before{box-sizing:border-box;margin:0;padding:0}ol,ul{list-style-type:none}img,picture,svg,video{display:block}.downyata{font-family:monospace}.col{display:flex}.a{filter:contrast(300%)}.stat{background-color:#eee;border-radius:5px;padding:10px 20px;width:fit-content}.gostinnia{filter:contrast(3000%) invert(100%)}.gosti{margin-left:100px}.nameV{font-weight:900}.line{display:flex;margin-left:10px;margin-top:100px;position:relative;width:fit-content}.line__road{height:100px;width:134px}.line__train{align-items:center;background-color:hsla(0,0%,100%,.7);border:2px solid #fff;border-radius:4px;color:#222;display:flex;font-size:20px;height:34px;justify-content:center;left:0;position:absolute;top:32px;width:34px;z-index:10}.line__train.reverse{transform:rotateY(180deg)}.line__sity{color:#191970;font-size:17px;font-weight:700;position:absolute;top:-35px}.line__sity:before{background-color:#6a5acd;border:1px dashed #fff;content:"";height:44px;position:absolute;top:25px;width:3px}.line__timer{color:#333;display:none;left:0;position:absolute;top:-55px}.line__timer-label{background-color:#6a5acd;border-radius:4px;color:#fff;font-weight:700;padding:0 2px}.line__timer-content{margin-left:2px}.elevator{background-color:#000;height:900px;padding:10px;width:fit-content}.cabine{background-color:red;border-radius:4px;height:80px;width:60px}
+/*!******************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js!./css/reset.css ***!
+  \******************************************************************/
+*,
+::before,
+::after {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+ul,
+ol {
+   list-style-type: none;
+}
+
+img,
+svg,
+video,
+picture {
+   display: block;
+}
+
+/*!******************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js!./css/style.css ***!
+  \******************************************************************/
+.downyata {
+   font-family: monospace;
+}
+
+.col {
+   display: flex;
+}
+
+.a {
+   filter: contrast(300%);
+}
+
+.stat {
+   padding: 10px 20px;
+   border-radius: 5px;
+   background-color: #eee;
+   width: fit-content;
+}
+
+.gostinnia {
+   filter: contrast(3000%) invert(100%);
+}
+
+.gosti {
+   margin-left: 100px;
+}
+
+.nameV {
+   font-weight: 900;
+}
+
+.line {
+   display: flex;
+   margin-top: 100px;
+   margin-left: 10px;
+   position: relative;
+   width: fit-content;
+}
+
+.line__road {
+   width: 134px;
+   height: 100px;
+}
+
+.line__train {
+   position: absolute;
+   top: 32px;
+   left: 0;
+   width: 34px;
+   height: 34px;
+   background-color: rgba(255, 255, 255, 0.7);
+   border-radius: 4px;
+   font-size: 20px;
+   color: #222;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border: 2px solid white;
+   z-index: 10;
+}
+
+.line__train.reverse {
+   transform: rotateY(180deg);
+}
+
+.line__sity {
+   position: absolute;
+   top: -35px;
+   font-weight: 700;
+   color: midnightblue;
+   font-size: 17px;
+}
+
+.line__sity::before {
+   content: "";
+   position: absolute;
+   top: 25px;
+   height: 44px;
+   width: 3px;
+   background-color: slateblue;
+   border: 1px dashed white;
+}
+
+.line__timer {
+   display: none;
+   position: absolute;
+   top: -55px;
+   left: 0;
+   color: #333;
+}
+
+.line__timer-label {
+   font-weight: 700;
+   color: white;
+   padding: 0 2px;
+   background-color: slateblue;
+   border-radius: 4px;
+}
+
+.line__timer-content {
+   margin-left: 2px;
+}
+
+.elevator {
+   height: 900px;
+   padding: 10px;
+   background-color: black;
+   width: fit-content;
+}
+
+.cabine {
+   width: 60px;
+   height: 80px;
+   background-color: red;
+   border-radius: 4px;
+}
+

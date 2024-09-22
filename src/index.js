@@ -1,6 +1,7 @@
 import "./css/reset.css";
 import "./css/style.css";
 import { API } from "./api.js";
+import { login } from "./modules/login.js";
 import { Line } from "./modules/magistral/Line.js";
 import { sleep } from "./modules/common.js";
 import blueRoad from "./images/road.jpg";
@@ -11,37 +12,7 @@ import "./images/Сая.jpg";
 import "./images/b.jpg";
 import "./images/s.jpg";
 
-const wrapper = document.querySelector('#app');
-if (true) {
-	wrapper.style.display = 'none';
-	const login = document.querySelector("#app__login");
-	login.style.display = 'block';
-	login.addEventListener('submit', (evt) => {
-		evt.preventDefault();
-		const name = document.querySelector('.app__login-name').value;
-		const password = document.querySelector('.app__login-password').value;
-		if (name !== '' && password !== '') {
-			const data = {
-				name,
-				password,
-			};
-			API.sendLoginData(data);
-		} else {
-			alert('Заполни данные пользователя!');
-		}
-
-		const requestIsValidLoginDataFn = (isValid) => {
-			console.log(isValid);
-			if (isValid) {
-				login.style.display = 'none';
-				wrapper.style.display = 'block';
-			} else {
-				alert('Неверные данные пользователя.');
-			}
-		};
-		API.getIsValidLoginData(requestIsValidLoginDataFn);
-	});
-}
+login();
 
 {
 	// const magistral = document.querySelector('.magistral');
@@ -64,7 +35,7 @@ const bvBtn = document.querySelector('.bvBtn');
 // bvBtn.addEventListener('click', () => {
 // 	blueLine.draw();
 // });
-	
+
 const сая = document.querySelector('.сая');
 setInterval(() => {
 	сая.style.filter = 'invert(1000%)';
