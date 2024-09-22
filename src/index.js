@@ -1,4 +1,5 @@
 import "./css/reset.css";
+import "./css/fonts.css";
 import "./css/style.css";
 import { API } from "./api.js";
 import { login } from "./modules/login.js";
@@ -11,6 +12,10 @@ import "./images/mpa.jpg";
 import "./images/Сая.jpg";
 import "./images/b.jpg";
 import "./images/s.jpg";
+import "./images/login.jpg";
+import "./fonts/alcotton.ttf";
+import "./fonts/gogol.ttf";
+import "./images/3.jpg";
 
 login();
 

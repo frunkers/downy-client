@@ -114,3 +114,175 @@
    background-color: red;
    border-radius: 4px;
 }
+
+@keyframes пиздищаметеорупадётнанашупланету {
+   0% {
+      background: linear-gradient(0turn, black, #15201c, black);
+   }
+   10% {
+      background: linear-gradient(0.1turn, black, #15201c, black);
+   }
+   20% {
+      background: linear-gradient(0.2turn, black, #15201c, black);
+   }
+   30% {
+      background: linear-gradient(0.3turn, black, #15201c, black);
+   }
+   40% {
+      background: linear-gradient(0.4turn, black, #15201c, black);
+   }
+   50% {
+      background: linear-gradient(0.5turn, black, #15201c, black);
+   }
+   60% {
+      background: linear-gradient(0.4turn, black, #15201c, black);
+   }
+   70% {
+      background: linear-gradient(0.3turn, black, #15201c, black);
+   }
+   80% {
+      background: linear-gradient(0.2turn, black, #15201c, black);
+   }
+   90% {
+      background: linear-gradient(0.1turn, black, #15201c, black);
+   }
+   100% {
+      background: linear-gradient(0turn, black, #15201c, black);
+   }
+}
+
+.body-login {
+   animation: пиздищаметеорупадётнанашупланету 6s infinite;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.app__login {
+   margin-bottom: 70px;
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.app__login-marba {
+   position: absolute;
+   transform: rotateZ(-20deg);
+   font-family: "Gogol", sans-serif;
+   top: -10px;
+   left: 350px;
+   color: aquamarine;
+   opacity: 0.05;
+   font-size: 25px;
+   z-index: 10;
+}
+
+.app__login-form {
+	margin-top: -10px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   position: relative;
+   padding: 10px;
+   width: 400px;
+   height: 400px;
+   background-image: url("../images/login.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   font-family: "Alco", sans-serif;
+}
+
+.saya {
+   position: absolute;
+   top: 90%;
+   left: 80%;
+   color: darkslategray;
+   font-size: 16px;
+   opacity: 0.3;
+   transform: rotateZ(8deg);
+}
+
+.app__login-label {
+   display: block;
+}
+
+.app__login-label-name {
+   font-weight: 900;
+   color: blue;
+   opacity: 0.7;
+   font-size: 40px;
+   background-color: rgba(154, 234, 204, 0.4);
+}
+
+.app__login-input {
+   padding: 4px;
+   background-color: rgba(80, 34, 31, 0.1);
+   border: 2px dashed khaki;
+   color: cyan;
+}
+
+.app__login-name {
+   margin-top: 10px;
+}
+.app__login-password {
+   margin-bottom: 10px;
+}
+
+.app__login-btns {
+   /* filter: hue-rotate(0turn); */
+   display: flex;
+   align-items: center;
+   position: absolute;
+   bottom: -90px;
+}
+
+.app__login-btn {
+   padding: 3px;
+   background: cadetblue;
+   border: 2px solid mediumaquamarine;
+   font-family: monospace, sans-serif;
+   color: #15201c;
+   cursor: pointer;
+}
+
+.app__login-btn + .app__login-btn {
+   margin-left: 20px;
+}
+
+.app__login-btn-clear {
+   background: transparent;
+   color: azure;
+   opacity: 0.4;
+}
+
+.app__login-btn-to {
+   background-color: darkcyan;
+   box-shadow: 0px 0px 20px rgba(0, 139, 139, 0.65);
+}
+
+.app__login-more {
+   color: azure;
+   font-family: "Gogol";
+   font-size: 70px;
+   position: relative;
+   z-index: 8;
+}
+
+.app__login-more-text {
+   color: azure;
+   font-style: italic;
+   cursor: pointer;
+   text-decoration: underline;
+	background: #14201c;
+   font-family: monospace;
+   font-size: 20px;
+   position: absolute;
+   top: -30px;
+   left: 0;
+}
+
+.app__login-more-xyd {
+   color: mediumaquamarine;
+}
