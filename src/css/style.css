@@ -1,0 +1,116 @@
+.downyata {
+   font-family: monospace;
+}
+
+.col {
+   display: flex;
+}
+
+.a {
+   filter: contrast(300%);
+}
+
+.stat {
+   padding: 10px 20px;
+   border-radius: 5px;
+   background-color: #eee;
+   width: fit-content;
+}
+
+.gostinnia {
+   filter: contrast(3000%) invert(100%);
+}
+
+.gosti {
+   margin-left: 100px;
+}
+
+.nameV {
+   font-weight: 900;
+}
+
+.line {
+   display: flex;
+   margin-top: 100px;
+   margin-left: 10px;
+   position: relative;
+   width: fit-content;
+}
+
+.line__road {
+   width: 134px;
+   height: 100px;
+}
+
+.line__train {
+   position: absolute;
+   top: 32px;
+   left: 0;
+   width: 34px;
+   height: 34px;
+   background-color: rgba(255, 255, 255, 0.7);
+   border-radius: 4px;
+   font-size: 20px;
+   color: #222;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border: 2px solid white;
+   z-index: 10;
+}
+
+.line__train.reverse {
+   transform: rotateY(180deg);
+}
+
+.line__sity {
+   position: absolute;
+   top: -35px;
+   font-weight: 700;
+   color: midnightblue;
+   font-size: 17px;
+}
+
+.line__sity::before {
+   content: "";
+   position: absolute;
+   top: 25px;
+   height: 44px;
+   width: 3px;
+   background-color: slateblue;
+   border: 1px dashed white;
+}
+
+.line__timer {
+   display: none;
+   position: absolute;
+   top: -55px;
+   left: 0;
+   color: #333;
+}
+
+.line__timer-label {
+   font-weight: 700;
+   color: white;
+   padding: 0 2px;
+   background-color: slateblue;
+   border-radius: 4px;
+}
+
+.line__timer-content {
+   margin-left: 2px;
+}
+
+.elevator {
+   height: 900px;
+   padding: 10px;
+   background-color: black;
+   width: fit-content;
+}
+
+.cabine {
+   width: 60px;
+   height: 80px;
+   background-color: red;
+   border-radius: 4px;
+}
